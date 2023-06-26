@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans+JP:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato' , sans-serif;
+}
+
+.outer-box{
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(to top left, #f7b267,#f4845f);
+}
+
+.inner-box{
+    width: 400px;
+    margin: 0 auto; 
+
+    /* using auto for left right margin box will get in center of its parent */
+
+    position: relative;
+    top: 45%;
+
+    transform: translateY(-50%);
+    /* it will align box vertically as top 50% is distance of 50% of height from top it will start from 50% height but doing translateY -50%
+    box will shift 50% up from the 50% of parent height (center)   */
+
+    padding: 20px 50px ;
+    background-color: #ffffffcc;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+
+
+    box-shadow:2px 2px 5px #212121;
+
+    z-index: 1;
+}
+
+.signup-header h1{
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.signup-header p{
+    color: #555;
+}
+
+.signup-body{
+    margin: 20p 0px;
+}
+
+.signup-body p{
+    margin: 10px 0px;
+}
+
+.signup-body p label{
+    display: block;
+    font-weight: bold;
+}
+
+.signup-body p input{
+    width: 100%;
+    margin-top: 6px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size:1rem;
+}
+
+.signup-body p input[type=submit]{
+    background-color:#ffd670;
+    border: none;
+    color: black;
+    cursor: pointer;
+}
+
+.signup-body p input[type=submit]:hover{
+    background-color:#f9be28;
+}
+
+.signup-footer p{
+    color: #555;
+    text-align: center;
+}
+.signup-footer p a{
+    color: #f4845f;
+}
+
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    background: linear-gradient(to bottom right,#ffffff33, #ffffff);
+}
+
+.c1{
+    position: absolute;
+    top: 120px;
+    left: 150px;
+}
+
+.c2{
+    position: absolute;
+    bottom: 200px;
+    right: 150px;
+}
+
+
